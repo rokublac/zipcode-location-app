@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>Zipcode Location Finder</title>
+
+	<style>
+		.icon-remove, .icon-check {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="hero hero-body is-dark container">
+	<h1 class="title">AUS Location Info</h1>
+	<h2 class="subtitle">Enter a postcode to get location information</h2>
+
+	<form action="" id="zipform">
+		<div class="field">
+			<div class="control has-icons-left has-icons-right">
+				<input type="text" id="zip" class="input zip is-large" placeholder="Enter Zipcode">
+				<span class="icon is-small is-left">
+					<i class="fa fa-map-pin"></i>
+				</span>
+				<span class="icon is-small is-right icon-check" style="color:green">
+					<i class="fa fa-check"></i>
+				</span>
+				<span class="icon is-small is-right icon-remove" style="color:red">
+					<i class="fa fa-remove"></i>
+				</span>
+			</div>
+		</div>
+	</form>
+	</section>
+
+	<br>
+
+	<div class="container">
+		<div id= "msg" class="output"></div>
+	</div>
+
+<!-- JS -->
+<script type="text/javascript" src="app.js"></script>
+	
+</body>
+</html>
